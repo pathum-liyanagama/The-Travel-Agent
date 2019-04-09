@@ -1,0 +1,26 @@
+{
+  "name": "the-travel-agent",
+  "version": "1.0.0",
+  "description": "Fictional travel agent website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pathumpml91/The-Travel-Agent.git"
+  },
+  "keywords": [
+    "travel"
+  ],
+  "author": "Pathum Liyanagama",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pathumpml91/The-Travel-Agent/issues"
+  },
+  "homepage": "https://github.com/pathumpml91/The-Travel-Agent#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "normalize.css": "^8.0.1"
+  }
+}
