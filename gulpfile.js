@@ -11,8 +11,8 @@ gulp.task('default', function() {
     console.log("Default task");
 });
 
-gulp.task('style', function(){
-    gulp.src('./app/assets/styles/styles.css')
+gulp.task('styles', function(){
+    return gulp.src('./app/assets/styles/styles.css')
     .pipe(postcss([cssImport, nested, simplevars, autoprefixer]))
     .pipe(gulp.dest('./app/temp/styles'));
 });
@@ -20,6 +20,7 @@ gulp.task('style', function(){
 gulp.task('watch', function(){
 
     browserSync.init({
+        notify: false,
         server: {
             baseDir: "app"
         }
@@ -30,8 +31,12 @@ gulp.task('watch', function(){
     });
 
     watch('./app/assets/styles/**/*.css', function(){
-        gulp.start('style');
+        gulp.start('cssInject');
     });
-
-    
 });
+
+gulp.task('cssInject', ['styles'], function(){
+    return gulp.src('./app/temp/styles/styles.css')
+     .pipe(browserSync.stream());
+     
+})
