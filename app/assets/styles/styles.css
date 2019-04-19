@@ -1,10 +1,5 @@
-$mainBlue: #2f5572;
-
-body {
-    color: $mainBlue;
-    columns: 300px 2;
-
-    p {
-        color: black;
-    }
-}
+@import 'normalize.css';
+@import 'base/_variables.css';
+@import 'base/_global.css';
+@import 'modules/_large-hero.css';
+@import 'modules/_button.css';
