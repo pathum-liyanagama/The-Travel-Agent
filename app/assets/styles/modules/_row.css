@@ -8,4 +8,12 @@
     &--gutters > div {
         padding-right: 65px;
     }
+
+    &--margin-b-until-medium {
+        margin-bottom: 1rem;
+
+        @mixin atMedium {
+            margin-bottom: 0;
+        }
+    }
 }
