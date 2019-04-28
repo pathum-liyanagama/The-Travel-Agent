@@ -671,8 +671,16 @@ a {
         margin-right: -65px;
     }
 
+.row--gutters-large {
+        margin-right: -100px;
+    }
+
 .row--gutters > div {
         padding-right: 65px;
+    }
+
+.row--gutters-large > div {
+        padding-right: 100px;
     }
 
 .row--margin-b-until-medium {
@@ -697,6 +705,11 @@ a {
             max-width: 37%;
         }
 
+        .col__medium-6 {
+            float: left;
+            max-width: 50%;
+        }
+
         .col__medium-8 {
             float: left;
             max-width: 66.66%;
@@ -710,7 +723,7 @@ a {
 .generic-content-container p {
         line-height: 1.65;
         font-weight: 300;
-        margin: 1.8rem 0;
+        margin: 0 0 1.8rem 0;
     }
 
 @media (min-width: 530px){
@@ -722,4 +735,82 @@ a {
 
 .generic-content-container p a {
         font-weight: 700;
+    }
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 400;
+    position: relative;
+}
+
+@media (min-width: 530px){
+
+.section-title {
+        font-size: 3.75rem
+}
+    }
+
+.section-title strong {
+        font-weight: 500;
+    }
+
+.section-title__icon {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: .7rem;
+    }
+
+@media (min-width: 530px){
+
+.section-title__icon {
+            display: inline-block;
+            margin-left: 0;
+            margin-right: .5rem
+    }
+    }
+
+.feature-item {
+    
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+@media (min-width: 530px){
+
+.feature-item {
+        padding-left: 94px
+}
+    }
+
+.feature-item__icon{
+        display: block;
+        margin: 0 auto;
+    }
+
+@media (min-width: 530px){
+
+.feature-item__icon{
+            position: absolute;
+            left: 0
+    }
+    }
+
+.feature-item__title {
+        font-size: 1.3rem;
+        font-weight: 400;
+        margin-bottom: .5rem;
+        margin-top: 0.8em;
+        text-align: center;
+    }
+
+@media (min-width: 530px){
+
+.feature-item__title {
+            font-size: 1.7rem;
+            margin-bottom: .8rem;
+            margin-top: 1em;
+            text-align: left
+    }
     }
